@@ -136,3 +136,49 @@ error: failed to push some refs to 'https://github.com/NickKartha/testcc.git'
 ```
 
 Stuck here. Feel free to submit issue.
+
+Ok, continuing. I took the existing `README.md` from the latest zip and manually put it into the local repo folder.
+
+Samson tried to help. His attmpt follows:
+```
+C:\Users\CCF\Desktop\GROUP 17\testcc>git init
+Reinitialized existing Git repository in C:/Users/CCF/Desktop/GROUP 17/testcc/.git/
+
+C:\Users\CCF\Desktop\GROUP 17\testcc>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   README.md
+
+
+C:\Users\CCF\Desktop\GROUP 17\testcc>git add --all
+
+C:\Users\CCF\Desktop\GROUP 17\testcc>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   README.md
+
+
+C:\Users\CCF\Desktop\GROUP 17\testcc>git commit -m "Initial commit"
+[master 58bbdd5] Initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+```
+We encountered the same error when we tried `git push remote master`
+
+I googled the symptom and got back this useful guide: https://blog.plover.com/prog/git-ff-error.html
+
+It explains to do the following:
+[ ] 1. Fetch the remote master branch and check it out.
+[ ] 2. Do some work and commit it on the local master.
+[ ] 3. Push the new work back to the remote.
+[ ] 4. Refresh the tracking branch.
+[ ] 5. Rewrite the local changes.
+[ ] 6. Try the push again.
+
+I'll try to this soon.
+
