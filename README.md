@@ -1,4 +1,7 @@
 # testcc
+
+[![Build Status](https://travis-ci.org/NickKartha/testcc.svg?branch=master)](https://travis-ci.org/NickKartha/testcc)
+
 Using cookie_cutter to build a test module for PyPI
 
 Travis CI: https://travis-ci.org/NickKartha/testcc
@@ -173,12 +176,18 @@ We encountered the same error when we tried `git push remote master`
 I googled the symptom and got back this useful guide: https://blog.plover.com/prog/git-ff-error.html
 
 It explains to do the following:
-[ ] 1. Fetch the remote master branch and check it out.
-[ ] 2. Do some work and commit it on the local master.
-[ ] 3. Push the new work back to the remote.
-[ ] 4. Refresh the tracking branch.
-[ ] 5. Rewrite the local changes.
-[ ] 6. Try the push again.
 
-I'll try to this soon.
++ [ ] 1. Fetch the remote master branch and check it out.
+
++ [ ] 2. Do some work and commit it on the local master.
+
++ [ ] 3. Push the new work back to the remote.
+
++ [ ] 4. Refresh the tracking branch.
+
++ [ ] 5. Rewrite the local changes.
+
++ [ ] 6. Try the push again.
+
+--> I'll try to this out soon ;;
 
